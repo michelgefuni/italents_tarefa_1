@@ -1,0 +1,113 @@
+body {
+  padding: 24px;
+  font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+  font-size: 2rem;
+  line-height: 200%;
+  margin-bottom: 64px;
+  text-align: center;
+}
+
+.form,
+.result {
+  width: 100%;
+  max-width: 360px;
+  margin: auto;
+}
+
+.form div:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.form-item,
+.form-button {
+  display: flex;
+  align-items: center;
+}
+
+.form-item label,
+.form-item input {
+  font-size: 1rem;
+}
+
+.form-item label {
+  width: 40%;
+  text-align: right;
+  padding-right: 8px;
+}
+
+.form-item input {
+  width: 60%;
+  height: 26px;
+  text-align: center;
+}
+
+.form-footer {
+  padding: 12px;
+  text-align: center;
+}
+
+.form-footer button {
+  padding: .5rem 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #2f54eb;
+  color: #fff;
+  border: none;
+  box-shadow: rgba(0, 0, 0, .5) 0 0 5px;
+  cursor: pointer;
+  transition: all .1s ease-in-out;
+}
+
+.form-footer button:hover {
+  background-color: #1d39c4;
+}
+
+.result {
+  padding-top: 64px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  display: none;
+}
+
+.result-value {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 48px;
+}
+
+.result-value strong {
+  text-align: center;
+  font-size: 3rem;
+  line-height: 200%;
+}
+
+.result > div {
+  width: 100%;
+}
+
+.details > table {
+  width: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.details .title {
+  line-height: 200%;
+  background-color: #2f54eb;
+  color: #fff;
+  padding: 0 8px;
+}
+
+.details td {
+  padding: 0 8px;
+}
+
+.details .top,
+.details tbody {
+  line-height: 200%;
+  font-size: .75rem;
+}

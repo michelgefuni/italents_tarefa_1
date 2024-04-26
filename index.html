@@ -4,22 +4,73 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Introdução a Back end development - Tarefa 1</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles/reset.css" />
   <link rel="stylesheet" href="./styles/styles.css" />
 </head>
 <body>
   <h1>Calculadora IMC</h1>
-  <div>
-    <div>
-      <label>Altura (ex.: 1,70)</label>
-      <input type="number" name="" id="">
+  <div class="form">
+    <div class="form-item">
+      <label>Altura (m)</label>
+      <input placeholder="1,70" type="number" name="height" id="height" />
     </div>
-    <div>
-      <label>Peso (ex.: 75,1)</label>
-      <input type="number" name="" id="">
+    <div class="form-item">
+      <label>Peso (kg)</label>
+      <input placeholder="71,2" type="number" name="weight" id="weight" />
     </div>
-    <div>
+    <div class="form-footer">
       <button type="button">Calcular</button>
+    </div>
+  </div>
+
+  <div class="result">
+    <div class="result-value">
+      <span>Seu IMC é</span>
+      <strong id="imc-value"></strong> 
+    </div>
+    <div class="details">
+      <table>
+        <thead>
+          <tr>
+            <td class="title" colspan="3">Veja a interpretação do IMC</td>
+          </tr>
+          <tr class="top">
+            <td>IMC</td>
+            <td>Classificação</td>
+            <td width="70" style="text-align: center">Grau</small></td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Menor que 18,5</td>
+            <td>Magreza</td>
+            <td style="text-align: center">0</td>
+          </tr>
+          <tr>
+            <td>Entre 18,5 e 24,9</td>
+            <td>Normal</td>
+            <td style="text-align: center">0</td>
+          </tr>
+          <tr>
+            <td>Entre 25,0 e 29,9</td>
+            <td>Sobrepeso</td>
+            <td style="text-align: center">I</td>
+          </tr>
+          <tr>
+            <td>Entre 30,0 e 39,9</td>
+            <td>Obesidade</td>
+            <td style="text-align: center">II</td>
+          </tr>
+          <tr>
+            <td>Maior que 40,0</td>
+            <td>Obesidade Grave</td>
+            <td style="text-align: center">III</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </div>
 </body>
