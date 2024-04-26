@@ -1,2 +1,2 @@
-# italents_tarefa_1
-Calculadora IMC
+# Introdução a Back end development
+## Tarefa 1 - Calculadora IMC
