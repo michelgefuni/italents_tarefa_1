@@ -9,24 +9,31 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles/reset.css" />
   <link rel="stylesheet" href="./styles/styles.css" />
+  <script src="./scripts.js"></script>
 </head>
 <body>
   <h1>Calculadora IMC</h1>
   <div class="form">
     <div class="form-item">
       <label>Altura (m)</label>
-      <input placeholder="1,70" type="number" name="height" id="height" />
+      <div>
+        <input id="height-input" placeholder="1,70" type="text" name="height" id="height" />
+        <span id="height-error" class="form-error"></span>
+      </div>
     </div>
     <div class="form-item">
       <label>Peso (kg)</label>
-      <input placeholder="71,2" type="number" name="weight" id="weight" />
+      <div>
+        <input id="weight-input" placeholder="71,2" type="text" name="weight" id="weight" />
+        <span id="weight-error" class="form-error"></span>
+      </div>
     </div>
     <div class="form-footer">
-      <button type="button">Calcular</button>
+      <button id="btn-calculate" type="button">Calcular</button>
     </div>
   </div>
 
-  <div class="result">
+  <div id="result-section" class="result">
     <div class="result-value">
       <span>Seu IMC é</span>
       <strong id="imc-value"></strong> 

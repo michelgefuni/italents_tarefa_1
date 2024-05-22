@@ -22,9 +22,14 @@ h1 {
 }
 
 .form-item,
-.form-button {
+.form-button { display: flex; }
+.form-item { align-items: baseline; }
+.form-button { align-items: center; }
+
+.form-item > div {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
 .form-item label,
@@ -39,9 +44,14 @@ h1 {
 }
 
 .form-item input {
-  width: 60%;
   height: 26px;
   text-align: center;
+}
+
+.form-error {
+  font-size: 0.625rem;
+  line-height: 200%;
+  color: #f44336;
 }
 
 .form-footer {
@@ -66,7 +76,7 @@ h1 {
 }
 
 .result {
-  padding-top: 64px;
+  padding-top: 32px;
   display: flex;
   flex-direction: column;
   margin: auto;
@@ -77,10 +87,10 @@ h1 {
   display: flex;
   flex-direction: column;
   margin-bottom: 48px;
+  text-align: center;
 }
 
 .result-value strong {
-  text-align: center;
   font-size: 3rem;
   line-height: 200%;
 }
